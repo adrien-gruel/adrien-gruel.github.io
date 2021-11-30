@@ -1,8 +1,7 @@
-/* GLOBAL FONT */
 
-body { font-family: var(--sans-serif) }
+/* ========= SECTIONS: HORIZONTAL AND VERTICAL SPACING ======== */
 
-/* ============ SECTIONS:SINGLE-COLUMN LAYOUTS ============ */
+/* A 'part' of a web page that is not a 'header' or a 'footer' or a 'nav' (menu). Typically, sections have a heading (usually h2). */
 
 /* Desktops/Laptops */
 @media (min-width: 1200px) { 
@@ -36,7 +35,10 @@ body { font-family: var(--sans-serif) }
 section:last-child { padding-bottom: 6% }
 
 
-/* ============= SECTIONS: MULTI-COLUMN LAYOUTS ============ */
+/* ============= SECTIONS: FLEXBOX-BASED  ============ */
+
+/* For a section that is a 'parent' container of child elements. 
+On large screens (and sometimes small screens too), the div child elements are typically arranged in multi-column layouts */
 
 .container-flex { 
     display: flex; 
@@ -49,8 +51,8 @@ section:last-child { padding-bottom: 6% }
     padding-right: 8%; 
 }
 
-/* ============ SECTIONS: DIRECT DESCENDENTS  =========== */
-
+/* ========= SECTIONS: SINGLE COLUKN, FULL-WIDTH ========= */
+/* For first, introduction content of a multi-column section. */
 
 /* Desktops/Laptops */
 @media (min-width: 1200px) { 
@@ -93,86 +95,65 @@ section:last-child { padding-bottom: 6% }
     }
 }
 
-/* Headings and text */
+/* All viewports */
 .col-1 {
     width: 100%;
     margin-bottom: 42px;
 }
 
+/* Sub-headings (h2 and h3) inside a .col-1 child element */
+
 .col-1 h2 {
     font-weight: 700;
     font-size: calc(28px + (48 - 28) * ((100vw - 320px) / (1140 - 320)));
-    width: 100%;
     line-height: 1.1;
     letter-spacing: -2px;
     margin-bottom: 32px;
+    color: var(--gray-900);
 }
 
-.col-1 p {
+.col-1 h1.long-text {
+    font-size: calc(28px + (48 - 28) * ((100vw - 320px) / (1140 - 320)));
+}
+
+.col-1 h3 {
     font-size: calc(22px + (32 - 22) * ((100vw - 320px) / (1140 - 320)));
-    width: 100%;
+    font-weight: normal;
     line-height: 1.2;
     letter-spacing: -1px;
-    font-weight: normal;
     margin-top: -12px;
-    margin-bottom: 12px;
     color: var(--gray-700)
 }
 
+/* Adjust upper block h2 and h3 letter-spacing for mobiles */
 @media (max-width: 767px) { 
-    .col-1 { margin-bottom: 30px }
     .col-1 h2 { letter-spacing: -1px }
-    .col-1 p { letter-spacing: 0 }
+    .col-1 h3 { letter-spacing: 0 }
 }
 
-section > p:last-child {
-    margin-bottom: 30px;
+/* Left-aligned */
+
+/* Non-mobiles */
+@media (min-width: 768px) { 
+    .container-full .col-1 {
+        padding-left: 0;
+        padding-right: 15%
+    }
 }
 
-
-section > ul {
-    margin-left: 27px;
-    margin-bottom: 16px
+/* Larger mobiles */
+@media (min-width: 500px) and (max-width: 767px) { 
+    .container-full .col-1 {
+        padding-left: calc((100% - 400px)/2);
+		padding-right: calc((100% - 400px)/2);
+    }
 }
 
-section > ul li {
-    font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1140 - 320)));
-	line-height: 1.5; 
-    margin-bottom: 12px;
+@media (min-width: 400px) and (max-width: 499px)  { 
+    .container-full .col-1 { padding-left: 2% }
 }
 
-figure.wider-120 { 
-    width: 120%;
-    margin-left: -10%;
-}
-
-figure.wide-full { 
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-}
-
-/* YouTube Videos */
-.video-container {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    margin-bottom: 32px;
-}
-            
-.video-container::after {
-    padding-top: 56.25%;
-    display: block;
-    content: '';
-}
-            
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+/* Smaller mobiles */
+@media (max-width: 399px) { 
+    .container-full .col-1 { padding-left: 0 }
 }

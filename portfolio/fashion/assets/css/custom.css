@@ -134,7 +134,7 @@
 }
 
 /* Global font */
-body { font-family: var(--global-font) }
+body { font-family: "Playfair Display", serif }
 
 
 /* ========= THEME ONE ========== */

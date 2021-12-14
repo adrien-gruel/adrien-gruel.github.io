@@ -144,16 +144,45 @@ body { font-family: var(--global-font) }
 
 header.hero-block h2 { color: var(--pink-600) }
 header.hero-block h1 { color: var(--gray-300) }
+a.btn-primary:link,
+a.btn-primary:visited { background-color: var(--pink-600) }
+
+a.btn-secondary:link,
+a.btn-secondary:visited { background-color: var(--pink-600) }
+
+a.btn-secondary:focus,
+a.btn-secondary:hover,
+a.btn-secondary:active { color: var(--pink-700) }
+
+a.btn-secondary:focus,
+a.btn-secondary:hover,
+a.btn-secondary:active { color: var(--gray-300) }
+
+a.btn-secondary:focus,
+a.btn-secondary:hover,
+a.btn-secondary:active { background-color: var(--pink-700) }
+
+a.btn-primary:focus,
+a.btn-primary:hover,
+a.btn-primary:active { background-color: var(--pink-700) }
+
+a.btn-primary:link,
+a.btn-primary:visited { border-color: var(--gray-100) }
+
+a.btn-primary:focus,
+a.btn-primary:hover,
+a.btn-primary:active { border-color: var(--gray-600) }
+
+
+.theme-one .col-3 { background-color: var(--purple-700) }
 .theme-one { background-color: var(--pink-700) }
-.theme-one h2 { color: var(--gray-300) } 
-.theme-one h3 { color: var(--gray-300) } 
-.theme-one .upper-label { color: var(--gray-300) }
-.theme-one p { color: var(--gray-300) }
-.theme-one li { color: var(--gray-300) }
-.theme-one a:not(.btn):link { color: var(--purple-500) }
-.theme-one a:not(.btn):visited { color: var(--purple-500) }
-.theme-one a:not(.btn):focus { color: var(--purple-300) }
-.theme-one a:not(.btn):hover { color: var(--purple-300) } 
-.theme-one a:not(.btn):active { color: var(--purple-300) }
+.theme-one .col-1 h2 { color: var(--purple-800) }
+.theme-one .col-1 h3 { color: var(--gray-300) }
+.theme-one .col-3 p { color: var(--gray-400) }
+.theme-one .col-3 li { color: var(--gray-400) }
+.theme-one .col-3 h3 { color: var(--pink-600) }
+.theme-one.col-borders .col-3 { border-color: var(--purple-700) }
 
 
+footer { background-color: var(--purple-700) }
+footer h2 { color: var(--pink-600) }

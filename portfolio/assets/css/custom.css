@@ -141,4 +141,36 @@ body { font-family: var(--global-font) }
 
 /* Background colour */
 .theme-one .col-1 h3 { color: var(--gray-700) }
+header.hero-block h2 { color: var(--pink-600) }
+header.hero-block h1 { color: var(--gray-300) }
+a.btn-primary:link,
+a.btn-primary:visited { background-color: var(--pink-600) }
 
+a.btn-secondary:link,
+a.btn-secondary:visited { background-color: var(--pink-600) }
+
+a.btn-secondary:focus,
+a.btn-secondary:hover,
+a.btn-secondary:active { color: var(--pink-700) }
+
+a.btn-secondary:focus,
+a.btn-secondary:hover,
+a.btn-secondary:active { color: var(--gray-300) }
+
+a.btn-secondary:focus,
+a.btn-secondary:hover,
+a.btn-secondary:active { background-color: var(--pink-700) }
+
+a.btn-primary:focus,
+a.btn-primary:hover,
+a.btn-primary:active { background-color: var(--pink-700) }
+
+a.btn-primary:link,
+a.btn-primary:visited { border-color: var(--gray-100) }
+
+a.btn-primary:focus,
+a.btn-primary:hover,
+a.btn-primary:active { border-color: var(--gray-600) }
+
+footer { background-color: var(--purple-700) }
+footer h2 { color: var(--pink-600) }

@@ -172,6 +172,19 @@ a.btn-primary:visited { border-color: var(--gray-100) }
 a.btn-primary:focus,
 a.btn-primary:hover,
 a.btn-primary:active { border-color: var(--gray-600) }
+#contact-form p a:link { color: var(--gray-500) }
+#contact-form p a:visited { color: var(--gray-500) }
+#contact-form p { color: var(--gray-400) }
+#contact-form p a:focus { color: var(--indigo-300) }
+#contact-form p a:hover { color: var(--indigo-300) }
+#contact-form p:active { color: var(--indigo-300) }
+#contact-form #btn-submit:focus { background-color: var(--pink-400) }
+#contact-form #btn-submit:hover { background-color: var(--pink-400) }
+#contact-form #btn-submit { background-color: var(--pink-600) }
+#contact-form #btn-submit { background-color: var(--pink-700) }
+.container-contact-form { background-color: var(--pink-700) }
+#contact-form { background-color: var(--purple-700) }
+#contact-form h2 { color: var(--pink-600) }
 
 footer { background-color: var(--purple-700) }
 footer h2 { color: var(--pink-600) }
